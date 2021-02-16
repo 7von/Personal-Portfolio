@@ -6,7 +6,6 @@
 
 body {
     font-family: "Google Sans" ,"Helvetica Neue","sans-serif";
-    background-color: #e1efbb;
 }
 
 a {
@@ -92,6 +91,12 @@ img {
     background-color: #ffffff;
 }
 
+#portfolio-container a:hover{
+  color: #f2b950;
+  text-decoration: underline;
+  transition: color 0.3s ease-out;
+}
+
 .projects-section-header {
   max-width: 400px;  
   font-size: 40px;
@@ -124,14 +129,14 @@ img {
 }
 
 .project-image {
-  
+  height: calc(100% - 4.8rem);
   width: 100%;
   
 }
 
 .project-title{
   font-size: 2rem;
-  padding: 1.5rem 0.5rem;
+  padding: 1.0rem 0.5rem;
   color: white;
   font-weight: bold;
 }
@@ -139,12 +144,11 @@ img {
 
 
  .btn{
-    height: 4rem;
-    width: 8rem;
     background-color: gray;
     color: white;
     font-size: large;
     padding: 10px;
+    border: none;
   }
 
 
@@ -173,16 +177,18 @@ img {
     font-size: 20px;
     font-weight: 600;
   }
-
+  
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
   .contact-details {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
 }
 
-.contact-links {
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
