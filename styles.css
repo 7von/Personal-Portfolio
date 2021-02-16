@@ -32,7 +32,7 @@ img {
 
 #navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -44,6 +44,7 @@ img {
 .nav-container {
     display: flex;
     justify-content: space-between;
+    text-decoration: none
 }
 
 .nav-container li {
@@ -51,12 +52,10 @@ img {
     font-weight: bold;
     padding: 10px; 
 }
-.nav-container a {
-  text-decoration: none;
-}
 
 .nav-container a:hover{
   color: #f2b950;
+  transition: color 0.3s ease-out;
 }
 
 
@@ -122,16 +121,9 @@ img {
   border-radius: 2px;
 }
 
-.portfolio-container a:hover{
-  color: #f2b950;
-  text-decoration: underline;
-  transition: ease-out;
-}
-
 .project-image {
   height: calc(100% - 4.8rem);
   width: 100%;
-  
 }
 
 .project-title{
@@ -141,20 +133,18 @@ img {
   font-weight: bold;
 }
 
-
-
- .btn{
+.btn{
     background-color: gray;
     color: white;
     font-size: large;
     padding: 10px;
     border: none;
-  }
+}
 
 
   /* --------------------------- Contact  --------------------------- */
  
-  #contact {
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,29 +156,33 @@ img {
       62deg
       , #3a3d40 0%, #181719 100%);
     color: white;
-  }
+}
 
-  #contact h1{
+.contact-header{
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+#contact h1{
     font-size: 60px;
     font-weight: 700;
-  }
+}
 
-  #contact p{
+#contact p{
     font-size: 20px;
     font-weight: 600;
-  }
-  
+}
+
 .contact-links {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
   max-width: 980px;
   margin-top: 4rem;
   flex-wrap: wrap;
 }
   .contact-details {
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
+    height:50px;
+    width: 50px;
 }
 
